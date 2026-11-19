@@ -4,8 +4,7 @@
 // @version      1.0.0
 // @description  cleans some annoying blocks on different websites
 // @author       rrapcat
-// @match        https://*/*
-// @match        http://*/*
+// @match        https://eft.su/*
 // @grant        none
 // ==/UserScript==
 
