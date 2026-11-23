@@ -14,7 +14,6 @@
 	let w = window;
 
 	// EFT maps site which has rotating logo in the side menu
-	// todo: use MutationObserver
 	if (/https:\/\/eft.su/.test(w.location.href)) {
 		const observer = new MutationObserver(() => {
 			destroyBlocks(
