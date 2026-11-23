@@ -16,12 +16,17 @@
 	// EFT maps site which has rotating logo in the side menu
 	// todo: use MutationObserver
 	if (/https:\/\/eft.su/.test(w.location.href)) {
-		setTimeout(() => {
+		const observer = new MutationObserver(() => {
 			destroyBlocks(
 				"button[title=\"Свернуть меню\"]",
 				"a[target=\"_blank\"]",
 			);
-		}, 1000);
+		});
+
+		observer.observe(document.body, {
+			childList: true,
+			subtree: true,
+		});
 	}
 })();
 
